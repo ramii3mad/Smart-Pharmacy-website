@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <title>Smart Pharmacy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins','sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*------- Header Styling -------*/
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 100px; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.20);
+}
+header img{
+    width: 150px;
+    margin: 0px 0px 10px 0px;
+    padding: auto;
+}
+header a{
+    text-decoration: none;
+    color: #555;
+    font-size: 30px;
+}
+header a:hover{
+    color: #404040;
+}
+.logo{
+    margin-right: 50px;
+}
+.searcBox{
+    background-color: #d5d5d54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    padding: 10px 10px;
+}
+.searcBox input{
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 20px;
+    border-width: 100%;
+    padding: 0px 10px;
+    margin-bottom: 0px;
+    border: 0;
+    outline: none;
+    width: 400px;
+    opacity: 70%;
+}
+.searcBox img{
+    margin: 0px 0px 0px 0px;
+    width: 24px;
+    opacity: 80%;
+}
+/*---------------------*/
+
+.navigation a{
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: fixed;
+    background-size: cover;
+    padding-top: 100px;
+    justify-content: left;
+    /* background: rgb(47,115,54);
+    background: linear-gradient(0deg, rgba(47,115,54,1) 0%, rgba(255,255,255,1) 100%); */
+}
+
+.Image_div{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+
+}
+
+.Image_div img{
+    display: flex;
+    justify-content: right;
+    width: 250px;
+}
+
+.Image_div .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px 50px 20px 0px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    justify-content: left;
+}
+.Image_div .info p{
+    font-size: 32px;
+    color: #1c1c1c;
+}
+.Image_div .info form{
+    width: 350px;
+    font-size: 16px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+            <a href="#" class="logo"><img src="https://drive.google.com/uc?export=download&id=1yZYNSp6c_YQXa6oN05x96dt_zfkY8kKh" alt="Smart Pharmacy"></a>
+            <!-- <a href="#" class="logo"><img src="logo.png" alt="Smart Pharmacy"></a> -->
+            <div class="searcBox">
+                <img src="https://drive.google.com/uc?export=download&id=1tYer6W3PqlwVWLkSp8aY6a5pO_Xf27Gf">
+                <input type="text" placeholder="|  Search">
+            </div>
+            <nav class="navigation">
+                <a href="#">Log in</a>
+                <a href="#">Sign up</a>
+            </nav>
+    </header>
+
+    <section class="main">
+        <div class="Image_div">
+            <div class="info">
+                <p>Upload Your Prescription<br> To Get Your Medicines</p>
+                <form action = "/predict" method = "post" enctype="multipart/form-data">
+                    <input type="file" name="file"/>
+                    <input type = "submit" value="Upload"/>
+                </form>
+            </div>
+            <img src="https://drive.google.com/uc?export=download&id=1RdarKUF3XA8GshqsnYNI-Ki7twV-TvNk">
+        </div>
+        
+    </section>
+    </body>
+</html>
